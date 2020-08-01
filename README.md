@@ -21,7 +21,7 @@ Im "Microsoft Store" die App "Debian" installieren bzw. in der [Microsoft Dokume
 
 * Einrichtung des Linux SubSystems
 
-Beim ersten Start des SubSystems wird nach einem Benutzernamen gefragt, der frei wählbar ist (hier aber bitte nur Kleinbuchstaben verwenden, ggf. Ziffern dahinter - keine Großbuchstaben). Sinnvollerweise nutzt man hier seinen eigenen Windows-Benutzernamen. Ebenso muss ein Passwort für diesen Benutzer vergeben werden (nicht überspringen, sondern wirklich ein Passwort setzen). Hier macht es ggf. auch Sinn, das eigene Windows-Passwort zu setzen (muss aber beides nicht zwingend sein).
+Beim ersten Start des SubSystems wird nach einem Benutzernamen gefragt, der frei wählbar ist (hier aber bitte nur Kleinbuchstaben verwenden, ggf. Ziffern dahinter - keine Großbuchstaben). Sinnvollerweise nutzt man hier seinen eigenen Windows-Benutzernamen. Ebenso muss ein Passwort für diesen Benutzer vergeben werden (nicht überspringen, sondern wirklich ein Passwort setzen - dieses sieht man während der Eingabe nicht, davon nicht irritieren lassen). Hier macht es ggf. auch Sinn, das eigene Windows-Passwort zu setzen (muss aber beides nicht zwingend sein).
 Das Grundsystem ist nun vorhanden und muss mit benötigten Werkzeugen (Tools) versorgt werden. Dazu wird mittels dem Befehl `sudo apt-get update` die Paketliste auf den neuen Stand gebracht. Das eben vergebene Passwort wird dabei einmal abgefragt und ist einzugeben. Anschließend wird der Git-Client mittels `sudo apt-get install git` installiert. Die Frage, ob alle aufgeführten Pakete installiert werden sollen, wird bestätigt (Enter/Return-Taste drücken reicht dazu aus).
 
 * Clone dieses Repositories
@@ -45,6 +45,8 @@ Mittels `./patch.sh` wird alles nötige erledigt. Dies nimmt einige Zeit in Ansp
 In [diesem Video](https://www.youtube.com/watch?v=ezpGM2jR89A) ist die Anleitung einmal durchgespielt worden.
 
 **Weitere Hinweise:**
+
+Sollten auf dem PC "Internet Sicherheitssoftware" installiert sein (v.a. "Kaspersky Internet Security 2019" o.ä.), kann es nötig sein, diese temporär zu deaktivieren, da das Linux-Subsystem ansonsten keine Verbindung zum Internet erhält.
 
 Die gepatchte App läuft als sog. "Vordergrunddienst". Es ist daher normal, dass oben in der Taskleiste eine "Foreground Service Notification" erscheint.
 
